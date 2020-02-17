@@ -1,0 +1,20 @@
+															
+
+  {% if t=='s' %}
+  <div class="shadow-lg p-3 mb-5 bg-white rounded"></div>
+    <h3 style="color:red;">Sorry! This movie is not in our database.</h3>
+    <h3 style="color:red;">Try with another movie.</h3>
+  </div>
+
+  {% else %}
+  <div class="shadow-lg p-3 mb-5 bg-white rounded"></div>
+    <h3 style="color:powderblue;">You May like These</h3>
+  </div>
+
+    <ul class="list-group list-group-flush">
+      {% for m in r %}
+        <li class="list-group-item" style="color:green"><strong>{{m|capitalize}}</strong></li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+
