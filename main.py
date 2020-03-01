@@ -3,7 +3,7 @@ import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer, CountVectorizer
 from sklearn.metrics.pairwise import linear_kernel, cosine_similarity
 import numpy as np
-from flask import Flask, request, jsonify, render_template
+from flask import Flask, request,  render_template
 
 
 data = pd.read_csv(r'C:\Users\DELL\Desktop\movie recommender\movies_metadata.csv')
